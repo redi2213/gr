@@ -24,11 +24,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 // * RESTORE - code will repair kernel panic vulnerability
 // * MEMLEAK - memory leaks that our code will induce
 
-import { Int } from './module/int64.mjs';
-import { mem } from './module/mem.mjs';
-import { log, die, hex, hexdump } from './module/utils.mjs';
+import { Int } from './int64.mjs';
+import { mem } from './mem.mjs';
+import { log, die, hex, hexdump } from './utils.mjs';
 import { cstr, jstr } from './module/memtools.mjs';
-import { page_size, context_size } from './module/offset.mjs';
+import { page_size, context_size } from './offset.mjs';
 import { Chain } from './module/chain.mjs';
 
 import {
